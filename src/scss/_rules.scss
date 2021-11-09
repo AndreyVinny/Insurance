@@ -2,10 +2,6 @@
     padding-top: 100px ;
 }
 
-.rules_cont {
-    padding-top: 100px;
-}
-
 .rules_block {
     @include flex (row, space-between, center, nowrap);
 }
