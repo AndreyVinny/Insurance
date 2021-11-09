@@ -1,0 +1,125 @@
+.rules {
+    padding-top: 100px ;
+}
+
+.rules_cont {
+    padding-top: 100px;
+}
+
+.rules_block {
+    @include flex (row, space-between, center, nowrap);
+}
+.rules_block_rev {
+    @include flex (row-reverse, space-between, center, nowrap);
+    .block_text_name {
+        @include flex (row, flex-start, center, nowrap);
+        padding-bottom: 33px;
+        h3 {
+            font-size: 30px;
+            margin-left: 27px;
+        }
+    }
+    .rules_block_img {
+        @include flex (row, flex-end, center, nowrap);
+    }
+}
+
+.rules_block_img {
+    width: 50%;
+}
+
+.rules_block_text {
+    width: 50%;
+    padding: 0px 84px;
+    h3 {
+        font-size: 64px;
+        padding-bottom: 10px;
+    }
+    p {
+        font-size: 24px
+    }
+}
+
+@media (max-width: $notebook) {
+  .rules_block_text {
+      padding: 0px 0px;
+  }
+}
+
+@media (max-width: $tablet) {
+    .rules {
+        padding-top: 50px ;
+    }
+
+    .rules_cont {
+      padding-top: 50px;
+    }
+
+
+    .rules_block {
+        @include flex (column, center, center, nowrap);
+        margin-bottom: 20px;
+    }
+
+    .rules_block_rev {
+      .block_text_name {
+          @include flex (row, flex-start, center, nowrap);
+          padding-bottom: 10px;
+      }
+      .rules_block_img {
+          @include flex (row, center, center, nowrap);
+            img {
+                max-width: 50%;
+            }
+        }
+    }
+
+    .rules_block_img {
+        width: 100%;
+        @include flex (row, center, center, nowrap);
+        img {
+            max-width: 80%;
+        }
+    }
+
+    .rules_block_text {
+        width: 100%;
+        padding: 0px 0px;
+
+    }
+
+    .rules_block_text {
+        width: 100%;
+        padding: 0px 0px;
+        h3 {
+            font-size: 44px;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 18px
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .rules {
+        padding-top: 30px ;
+    }
+
+    .rules_block_rev {
+      .block_text_name {
+          @include flex (row, flex-start, center, nowrap);
+          padding-bottom: 10px;
+          img {
+              width: 54px;
+              height: 54px;
+          }
+      }
+      .rules_block_img {
+          @include flex (row, center, center, nowrap);
+            img {
+                max-width: 40%;
+            }
+      }
+    }
+}

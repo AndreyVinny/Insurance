@@ -1,0 +1,25 @@
+.presentation {
+  text-align: center;
+  margin-bottom: 100px;
+    button {
+      padding: 20px 82px;
+      background: $color_spec_first;
+      border: 1px solid $color_text_spec_second;
+      box-sizing: border-box;
+      box-shadow: 0px 2px 18px rgba(41, 41, 41, 0.1);
+      border-radius: 6px;
+      cursor: pointer;
+      &:hover,
+       :focus,
+       :active {
+           border: 1px solid $color_text_spec_third;
+           color: $color_text_spec_third;
+       }
+    }
+}
+
+@media (max-width: $notebook) {
+  .presentation {
+    margin-top: 0px;
+  }
+}

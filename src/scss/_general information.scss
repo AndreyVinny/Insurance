@@ -1,0 +1,53 @@
+$color_text_main: #000;
+$color_spec_first: #fff;
+$color_spec_second: #0D1C41;
+$color_spec_third: #939CA6;
+$color_spec_fifth: #9C9C9C;
+
+$color_text_spec: #DDD0A4;
+$color_text_spec_second: #4A607A;
+$color_text_spec_third: #A89060;
+$bg_main: #f7f7f7;
+$bg_footer: #4A607A;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 660px;
+
+}
+
+body {
+  background: $bg_main;
+}
+
+@mixin flex ($fd, $jc, $ai, $fw) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $fw;
+}
