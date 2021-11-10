@@ -25,7 +25,8 @@ footer {
          color: $color_spec_fifth;
          line-height: 22px;
      }
-     button {
+     .route {
+         display: inline-block;
          margin-top: 35px;
          text-transform: uppercase;
          padding: 18px 66px;
@@ -34,6 +35,8 @@ footer {
          box-sizing: border-box;
          box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.1);
          border-radius: 10px;
+         color:$color_text_main;
+         text-align: center;
         &:hover {
             border: 1px solid $color_text_spec;
             color: $color_text_spec;
@@ -99,7 +102,7 @@ hr {
 @media (max-width: $pc){
   .footer_cont {
       @include flex (row, space-between, top, wrap);
-      button {
+      .route {
         padding: 18px 23px;
       }
   }
@@ -122,7 +125,7 @@ hr {
 @media (max-width: $mobile) {
   .footer_cont {
       @include flex (column, center, center, wrap);
-      button {
+      .route {
         margin-bottom: 20px;
       }
   }

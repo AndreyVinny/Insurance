@@ -125,6 +125,20 @@ nav {
     left: 40%;
 }
 
+.button_up {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 1000;
+  a {
+    display: inline-block;
+    padding: 15px 19px;
+    background: $color_text_spec;
+    color: $color_text_main;
+    border-radius: 50%;
+  }
+}
+
 @media (max-width: $pc) {
   .header_main {
       padding: 47px 30px 44px;;
@@ -290,5 +304,11 @@ nav {
 
       .header_main_img {
         display: none
+      }
+
+      .button_up {
+        position: fixed;
+        bottom: 5%;
+        right: 3%;
       }
 }

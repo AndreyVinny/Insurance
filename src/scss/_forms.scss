@@ -114,6 +114,12 @@ form {
       font-size: 15px;
       color: $color_text_main;
       text-transform: uppercase;
+      &:hover,
+       :focus,
+       :active {
+           border: 1px solid $color_text_spec_third;
+           color: $color_text_spec_third;
+       }
     }
 }
 

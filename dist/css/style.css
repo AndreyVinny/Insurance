@@ -629,6 +629,20 @@ nav {
   left: 40%;
 }
 
+.button_up {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 1000;
+}
+.button_up a {
+  display: inline-block;
+  padding: 15px 19px;
+  background: #DDD0A4;
+  color: #000;
+  border-radius: 50%;
+}
+
 @media (max-width: 1440px) {
   .header_main {
     padding: 47px 30px 44px;
@@ -883,6 +897,12 @@ nav {
 
   .header_main_img {
     display: none;
+  }
+
+  .button_up {
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
   }
 }
 .about_block {
@@ -2001,6 +2021,12 @@ form {
   color: #000;
   text-transform: uppercase;
 }
+.btns_group .btn:hover,
+.btns_group .btn :focus,
+.btns_group .btn :active {
+  border: 1px solid #A89060;
+  color: #A89060;
+}
 
 .form_step {
   display: none;
@@ -2096,7 +2122,8 @@ footer {
   color: #9C9C9C;
   line-height: 22px;
 }
-.footer_cont button {
+.footer_cont .route {
+  display: inline-block;
   margin-top: 35px;
   text-transform: uppercase;
   padding: 18px 66px;
@@ -2107,8 +2134,10 @@ footer {
   -webkit-box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  color: #000;
+  text-align: center;
 }
-.footer_cont button:hover {
+.footer_cont .route:hover {
   border: 1px solid #DDD0A4;
   color: #DDD0A4;
 }
@@ -2224,7 +2253,7 @@ hr {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .footer_cont button {
+  .footer_cont .route {
     padding: 18px 23px;
   }
 }
@@ -2272,7 +2301,7 @@ hr {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .footer_cont button {
+  .footer_cont .route {
     margin-bottom: 20px;
   }
 

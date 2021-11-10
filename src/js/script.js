@@ -3,3 +3,4 @@
 @@include('questions_drop.js')
 @@include('happen.js')
 @@include('form.js')
+@@include('animation.js')
