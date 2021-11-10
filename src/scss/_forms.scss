@@ -17,6 +17,13 @@
 .form_img {
     position: relative;
     width: 50%;
+    transform: translate(100%, 0px);
+    opacity: 0;
+    transition: all 1s ease;
+    &._active {
+         transform: translate(0px, 0px);
+         opacity: 1;
+       }
     img {
         position: absolute;
         top: 50px;
@@ -36,6 +43,13 @@ form {
     width: 50%;
     max-width: 435px;
     padding: 50px 35px;
+    transform: translate(-100%, 0px);
+    opacity: 0;
+    transition: all 1s ease;
+    &._active {
+         transform: translate(0px, 0px);
+         opacity: 1;
+    }
 }
 
 

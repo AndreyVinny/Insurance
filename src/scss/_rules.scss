@@ -1,5 +1,6 @@
 .rules {
-    padding-top: 100px ;
+    padding-top: 100px;
+    overflow: hidden;
 }
 
 .rules_block {
@@ -17,16 +18,46 @@
     }
     .rules_block_img {
         @include flex (row, flex-end, center, nowrap);
+        transform: translate(100%, 0px);
+        opacity: 0;
+        transition: all 1s ease;
+        &._active {
+             transform: translate(0px, 0px);
+             opacity: 1;
+           }
     }
+    .rules_block_text{
+    transform: translate(-100%, 0px);
+    opacity: 0;
+    transition: all 1s ease;
+    &._active {
+         transform: translate(0px, 0px);
+         opacity: 1;
+       }
+     }
 }
 
 .rules_block_img {
     width: 50%;
+    transform: translate(-100%, 0px);
+    opacity: 0;
+    transition: all 1s ease;
+    &._active {
+         transform: translate(0px, 0px);
+         opacity: 1;
+       }
 }
 
 .rules_block_text {
     width: 50%;
     padding: 0px 84px;
+    transform: translate(100%, 0px);
+    opacity: 0;
+    transition: all 1s ease;
+    &._active {
+         transform: translate(0px, 0px);
+         opacity: 1;
+       }
     h3 {
         font-size: 64px;
         padding-bottom: 10px;

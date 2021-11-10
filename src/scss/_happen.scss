@@ -8,6 +8,13 @@
 }
 .happen_box {
   position: relative;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 1s ease;
+  &._active {
+       transform: translate(0px, 0px);
+       opacity: 1;
+     }
 }
 
 .happen_box_name {

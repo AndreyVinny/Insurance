@@ -3,13 +3,11 @@ $color_spec_first: #fff;
 $color_spec_second: #0D1C41;
 $color_spec_third: #939CA6;
 $color_spec_fifth: #9C9C9C;
-
 $color_text_spec: #DDD0A4;
 $color_text_spec_second: #4A607A;
 $color_text_spec_third: #A89060;
 $bg_main: #f7f7f7;
 $bg_footer: #4A607A;
-
 
 * {
     padding: 0;
@@ -39,7 +37,13 @@ h2 {
     max-width: 660px;
     margin: 0 auto;
     padding-bottom: 35px;
-
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 1s ease;
+    &._active {
+         transform: translate(0px, 0px);
+         opacity: 1;
+    }
 }
 
 body {

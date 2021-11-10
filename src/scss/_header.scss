@@ -114,8 +114,15 @@ nav {
 .button {
     background: $color_spec_first;
     text-transform: uppercase;
-    border: 1px solid #4A607A;
+    border: 1px solid $color_text_spec_second;
     border-radius: 6px;
+    cursor: pointer;
+    &:hover,
+     :active,
+     :focus {
+       border: 1px solid $color_text_spec;
+       color: $color_text_spec;
+     }
 }
 
 .header_main_img {

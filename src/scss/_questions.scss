@@ -3,6 +3,16 @@
     margin-bottom: 131px;
 }
 
+.questions_cont {
+    transform: translate(0px, 100%);
+    opacity: 0;
+    transition: all 1s ease;
+    &._active {
+       transform: translate(0px, 0px);
+       opacity: 1;
+   }
+}
+
 .questions_cont_box {
     text-align: center;
 }
